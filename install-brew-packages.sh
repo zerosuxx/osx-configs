@@ -1,1 +1,2 @@
-brew install --cask iterm2 sublime-text firefox jq yq
+brew install --cask iterm2 sublime-text firefox
+brew install jq yq
