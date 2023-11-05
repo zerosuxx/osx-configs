@@ -8,6 +8,9 @@ $ curl -s https://osx.zer0.hu/configure-host.sh | sudo sh -s HOSTNAME
 $ sudo sh enable-fingerprint-for-sudo.sh
 $ curl -s https://osx.zer0.hu/enable-fingerprint-for-sudo.sh | sudo sh -
 
+$ sudo sh configure-power-management.sh
+$ curl -s https://osx.zer0.hu/configure-power-management.sh | sudo sh -
+
 $ sh configure-system-settings.sh
 $ curl -s https://osx.zer0.hu/configure-system-settings.sh | sh -
 
