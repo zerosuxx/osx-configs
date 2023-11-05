@@ -10,6 +10,7 @@ defaults write com.apple.dock tilesize -int 35
 defaults write com.apple.dock showAppExposeGestureEnabled -int 1
 defaults -currentHost write com.apple.screensaver idleTime -int 1200
 
+option_space=524288
 defaults write com.apple.symbolichotkeys.plist AppleSymbolicHotKeys -dict-add 60 "
   <dict>
     <key>enabled</key><true/>
@@ -19,7 +20,7 @@ defaults write com.apple.symbolichotkeys.plist AppleSymbolicHotKeys -dict-add 60
       <array>
         <integer>32</integer>
         <integer>49</integer>
-        <integer>524288</integer>
+        <integer>${option_space}</integer>
       </array>
     </dict>
   </dict>
@@ -34,7 +35,7 @@ defaults write com.apple.symbolichotkeys.plist AppleSymbolicHotKeys -dict-add 61
       <array>
         <integer>32</integer>
         <integer>49</integer>
-        <integer>524288</integer>
+        <integer>${option_space}</integer>
       </array>
     </dict>
   </dict>
