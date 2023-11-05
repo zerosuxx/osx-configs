@@ -3,11 +3,16 @@
 defaults write -g InitialKeyRepeat -int 25
 defaults write -g KeyRepeat -int 2
 defaults write -g ApplePressAndHoldEnabled -bool false
-defaults write com.apple.Finder AppleShowAllFiles true
+
 defaults write com.apple.HIToolbox 'AppleFnUsageType' -int 0
+
+defaults write com.apple.Finder AppleShowAllFiles true
+
+# killall Dock
 defaults write com.apple.Dock autohide -int 1
 defaults write com.apple.dock tilesize -int 35
 defaults write com.apple.dock showAppExposeGestureEnabled -int 1
+
 defaults -currentHost write com.apple.screensaver idleTime -int 1200
 
 option_space=524288
@@ -40,3 +45,7 @@ defaults write com.apple.symbolichotkeys.plist AppleSymbolicHotKeys -dict-add 61
     </dict>
   </dict>
 "
+
+# killall ControlStrip
+defaults write com.apple.controlstrip MiniCustomized '(com.apple.system.screen-lock, com.apple.system.volume, com.apple.system.mute, com.apple.system.search)'
+defaults write com.apple.controlstrip FullCustomized '(com.apple.system.group.brightness, com.apple.system.show-desktop, com.apple.system.screencapture, com.apple.system.group.keyboard-brightness, com.apple.system.group.media, com.apple.system.group.volume)'
