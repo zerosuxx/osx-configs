@@ -2,4 +2,4 @@
 
 host_name=$1
 
-sudo scutil --set HostName "$host_name"
+scutil --set HostName "$host_name"
