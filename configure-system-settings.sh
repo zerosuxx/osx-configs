@@ -13,6 +13,7 @@ defaults write com.apple.Dock autohide -int 1
 defaults write com.apple.dock tilesize -int 35
 defaults write com.apple.dock showAppExposeGestureEnabled -int 1
 defaults write com.apple.dock mru-spaces -int 0
+defaults write com.apple.dock expose-group-apps -int 1
 
 option_space=524288
 defaults write com.apple.symbolichotkeys.plist AppleSymbolicHotKeys -dict-add 60 "
